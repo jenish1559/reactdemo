@@ -1,5 +1,13 @@
+import Footer from './components/footer'
+import Header from './components/header'
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Inter, Kanit } from 'next/font/google'
+
+const kanit = Kanit({
+  weight: ['300', '400'],
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -11,7 +19,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={kanit.className}>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   )
 }

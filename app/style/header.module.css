@@ -1,0 +1,40 @@
+.main_header{
+    padding: 0 9rem;
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    outline: none;
+    /*background-color: yellow;*/
+    /*background: linear-gradient(-45deg, #a8e48a, #1eb6d9, #f2d3f7);*/
+    background-size: 400% 400%;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.navbar_brand {
+    text-align: left;
+}
+
+.navbarList {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3.2rem;
+}
+
+.navbarItem {
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.navbarList a {
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: #161617;
+    padding: 1.3rem 1rem;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
